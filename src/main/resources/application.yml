@@ -1,0 +1,28 @@
+server:
+  port: 8080
+person:
+   id: 1
+   name: 顾问人
+spring:
+  profiles:
+    active: prod
+#debug: true
+logging:
+  level:
+      com.guwr.core: info
+  file: springlog.log
+  path:
+  pattern:
+    console:
+    file:
+---
+server:
+  port: 8081
+spring:
+  profiles: dev
+
+---
+server:
+  port: 8082
+spring:
+  profiles: prod
