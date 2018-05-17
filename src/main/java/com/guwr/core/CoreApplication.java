@@ -10,9 +10,6 @@ import javax.annotation.PostConstruct;
 @SpringBootApplication
 public class CoreApplication {
 
-
-    private static final Logger logger = LoggerFactory.getLogger(CoreApplication.class);
-
     public static void main(String[] args) {
         SpringApplication.run(CoreApplication.class, args);
     }
